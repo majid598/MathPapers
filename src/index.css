@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: linear-gradient(to bottom left, #18181b, #1e3a8a);
+  color: white;
+}
+
+.bg-l {
+  background: linear-gradient(to bottom left, #18181b, #1e3a8a);
+}
+
+.bg-blur {
+  backdrop-filter: blur(20px);
+}
+
+*::-webkit-scrollbar {
+  background-color: transparent;
+  width: 10px;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: gray;
+  width: 100%;
+  border-radius: 10px;
+  cursor: grabbing;
+}
+
+.box:hover > div {
+  bottom: 100px;
+}
+
+@media only screen and (max-width: 600px) {
+  *::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.grid-col-2 {
+  grid-template-columns: 66.666% calc(100% - 66.666%);
+}
