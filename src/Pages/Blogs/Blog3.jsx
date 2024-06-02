@@ -5,7 +5,7 @@ const Blog3 = () => {
     <div className="w-full py-40 xl:px-40 lg:px-28 md:px-14 px-8">
       <Header />
       <h1 className="text-center xl:text-5xl lg:text-4xl md:text-3xl text-2xl font-semibold">
-        Comparing fractions
+        Converting between mixed numbers and improper fractions
       </h1>
       <p className="lg:text-xl text-center mt-10">
         Mixed numbers and improper fractions are different ways of expressing

@@ -8,7 +8,7 @@ const BlogCard = ({ blog, className }) => {
       className={`card w-full border-2 p-5 rounded-lg ${className}`}
     >
       <div className="w-full h-52 rounded-lg overflow-hidden">
-        <img src={blog.img} className="w-full h-full" alt="" />
+        <img src={`/assets/images/${blog.img}`} className="w-full h-full" alt="" />
       </div>
       <div className="mt-4">
         <h2 className="mg:text-2xl text-xl font-semibold">{blog.title}</h2>
