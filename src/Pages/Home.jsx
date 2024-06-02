@@ -4,6 +4,7 @@ import BlogSec from "../Components/BlogSec";
 import Footer from "../Components/Footer";
 import Header from "../Components/Header";
 import { blog1 } from "../Data/data";
+import BlogCard from "../Components/BlogCard";
 
 const Home = () => {
   return (
@@ -38,28 +39,8 @@ const Home = () => {
               </Link>
             </div>
           </div>
-          <div className="p-10 pl-0 pt-0 w-full flex flex-col gap-10">
-            <div className="card w-full border-2 p-5 rounded-lg">
-              <div className="w-full h-52 rounded-lg overflow-hidden">
-                <img src={blog1.img} className="w-full h-full" alt="" />
-              </div>
-              <div className="mt-4">
-                <h2 className="mg:text-2xl text-start text-xl font-semibold">
-                  {blog1.title}
-                </h2>
-                <p className="mt-3 md:text-lg text-start text-sm">
-                  {blog1.desc}
-                </p>
-              </div>
-              <div className="items-end flex justify-end">
-                <Link
-                  to={`/blog/${blog1.address}`}
-                  className="mt-10 flex items-center gap-2 px-4 py-2 rounded-md border transition-all duration-300 hover:bg-white hover:text-black font-semibold"
-                >
-                  Read More <FaArrowRight />
-                </Link>
-              </div>
-            </div>
+          <div className="p-10 xl:flex pl-0 pt-0 w-full hidden flex-col gap-10">
+            <BlogCard blog={blog1} className={"text-start xl:block hidden"} />
           </div>
         </div>
       </div>
