@@ -12,7 +12,7 @@ const BlogCard = ({ blog, className }) => {
       </div>
       <div className="mt-4">
         <h2 className="mg:text-2xl text-xl font-semibold">{blog.title}</h2>
-        <p className="mt-3 md:text-lg text-sm">{blog.desc}</p>
+        <p className="mt-3 md:text-lg text-sm text-p">{blog.desc}</p>
       </div>
       <div className="items-end flex justify-end">
         <Link

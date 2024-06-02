@@ -39,3 +39,12 @@ body {
 .grid-col-2 {
   grid-template-columns: 66.666% calc(100% - 66.666%);
 }
+
+.text-p {
+  overflow: hidden; /* Hide overflow */
+  display: -webkit-box; /* Enable flexbox for the container */
+  -webkit-box-orient: vertical; /* Set the box orientation to vertical */
+  -webkit-line-clamp: 4; /* Number of lines to display before truncating */
+  line-clamp: 4; /* Standard property */
+  box-sizing: border-box;
+}

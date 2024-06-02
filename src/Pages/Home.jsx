@@ -11,14 +11,14 @@ const Home = () => {
     <div className="w-full">
       <Header />
       <div className="w-full pt-24">
-        <div className="w-full h-full xl:grid gap-10 grid-col-2 text-center py-10 pb-6 md:px-20 px-10">
-          <div className="relative h-[70vh] w-full">
+        <div className="w-full h-full xl:grid gap-10 grid-col-2 text-center xl:py-10 xl:pb-0 xl:px-20">
+          <div className="relative xl:h-[65vh] h-screen w-full">
             <img
               src="/assets/images/hero.jpg"
               alt=""
               className="w-full h-full"
             />
-            <div className="flex flex-col items-center justify-center w-full h-full absolute top-0 left-0">
+            <div className="flex flex-col items-center justify-center w-full h-full px-8 absolute top-0 left-0">
               <h1 className="lg:text-5xl md:text-4xl text-3xl font-semibold">
                 The World Of Math Edueks
               </h1>
