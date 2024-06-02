@@ -12,7 +12,7 @@ const Home = () => {
       <Header />
       <div className="w-full pt-24">
         <div className="w-full h-full xl:grid gap-10 grid-col-2 text-center xl:py-10 xl:pb-0 xl:px-20">
-          <div className="relative xl:h-[65vh] h-screen w-full">
+          <div className="relative xl:h-[31.5rem] h-screen w-full">
             <img
               src="/assets/images/hero.jpg"
               alt=""

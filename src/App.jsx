@@ -8,6 +8,8 @@ import Practice from "./Pages/Practice";
 import PracticePage from "./Pages/PracticePage";
 import Blog3 from "./Pages/Blogs/Blog3";
 import Blog4 from "./Pages/Blogs/Blog4";
+import Blog5 from "./Pages/Blogs/Blog5";
+import Blog6 from "./Pages/Blogs/Blog6";
 
 const App = () => {
   return (
@@ -27,6 +29,11 @@ const App = () => {
           path="/blog/Equivalent-Fractions-Made-Simple"
           element={<Blog4 />}
         />
+        <Route
+          path="/blog/Factorizing-polynomials-upto-2nd-degree"
+          element={<Blog5 />}
+        />
+        <Route path="/blog/Graphing-Straight-Lines" element={<Blog6 />} />
         <Route path="/topic/:id" element={<PracticePage />} />
       </Routes>
     </Router>
