@@ -17,6 +17,11 @@ import Blog10 from "./Pages/Blogs/Blog10";
 import Blog11 from "./Pages/Blogs/Blog11";
 import Blog12 from "./Pages/Blogs/Blog12";
 import Blog13 from "./Pages/Blogs/Blog13";
+import Blog14 from "./Pages/Blogs/Blog14";
+import Blog15 from "./Pages/Blogs/Blog15";
+import Blog16 from "./Pages/Blogs/Blog16";
+import Blog17 from "./Pages/Blogs/Blog17";
+import Blog18 from "./Pages/Blogs/Blog18";
 
 const App = () => {
   return (
@@ -65,6 +70,17 @@ const App = () => {
         <Route
           path="/blog/Pythagorean-Theorem-and-Its-Applications"
           element={<Blog13 />}
+        />
+        <Route path="/blog/Rates-ratios-and-proportions" element={<Blog14 />} />
+        <Route path="/blog/Solving-linear-equations" element={<Blog15 />} />
+        <Route path="/blog/System-of-Linear-Equations" element={<Blog16 />} />
+        <Route
+          path="/blog/The-Power-of-Order-of-Operations"
+          element={<Blog17 />}
+        />
+        <Route
+          path="/blog/Transformations-Rotation-and-Reflection"
+          element={<Blog18 />}
         />
         <Route path="/topic/:id" element={<PracticePage />} />
       </Routes>
