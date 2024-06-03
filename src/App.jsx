@@ -10,6 +10,10 @@ import Blog3 from "./Pages/Blogs/Blog3";
 import Blog4 from "./Pages/Blogs/Blog4";
 import Blog5 from "./Pages/Blogs/Blog5";
 import Blog6 from "./Pages/Blogs/Blog6";
+import Blog7 from "./Pages/Blogs/Blog7";
+import Blog8 from "./Pages/Blogs/Blog8";
+import Blog9 from "./Pages/Blogs/Blog9";
+import Blog10 from "./Pages/Blogs/Blog10";
 
 const App = () => {
   return (
@@ -34,6 +38,19 @@ const App = () => {
           element={<Blog5 />}
         />
         <Route path="/blog/Graphing-Straight-Lines" element={<Blog6 />} />
+        <Route
+          path="/blog/Identifying-and-Classifying-quadrilaterals"
+          element={<Blog7 />}
+        />
+        <Route
+          path="/blog/Identifying-and-Classifying-triangles"
+          element={<Blog8 />}
+        />
+        <Route path="/blog/Introduction-to-statistics" element={<Blog9 />} />
+        <Route
+          path="/blog/Modeling-real-world-problems-with-linear-inequalities"
+          element={<Blog10 />}
+        />
         <Route path="/topic/:id" element={<PracticePage />} />
       </Routes>
     </Router>

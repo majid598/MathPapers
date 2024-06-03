@@ -48,3 +48,12 @@ body {
   line-clamp: 4; /* Standard property */
   box-sizing: border-box;
 }
+
+.shadow{
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s;
+}
+.shadow:hover{
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.9);
+  scale: 1.02;
+}

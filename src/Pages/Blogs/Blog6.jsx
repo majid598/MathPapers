@@ -39,7 +39,7 @@ const Blog6 = () => {
         <h1 className="xl:text-3xl lg:text-2xl text-xl md:text-start text-center font-semibold">
           Gradient/slope(m)
         </h1>
-        <p className="lg:text-xl lg:w-3/4 mt-4">
+        <p className="lg:text-xl lg:w-3/4 mt-4 md:text-start text-center">
           The slope tells us how steep the line is. The larger the magnitude of
           the slope the larger the steepness. A positive slope means the line
           goes up as it moves from left to right (increasing). A negative slope
@@ -83,11 +83,11 @@ const Blog6 = () => {
           Now let&apos;s plot a line for the equation y = -2x-3 step by step by
           using the things we have learned so far.
         </p>
-        <li className="lg:text-xl lg:w-3/4 mt-4">
+        <li className="lg:text-xl mt-4">
           We can take the y-intercept point as our first point. For this
           equation, the coordinates for the intercept are (0,-3).
         </li>
-        <li className="lg:text-xl lg:w-3/4 mt-1">
+        <li className="lg:text-xl mt-1">
           Now let&apos;s use the equation to find a set of points that lie on
           the line. We&apos;ll use a table of values like the one given below.
           Here we can select arbitrary values of x, and use the equation of the
@@ -103,41 +103,43 @@ const Blog6 = () => {
           alt=""
         />
       </div>
-      <p className="lg:text-xl mt-10 text-center">
-        To factorize we select the common factor out of each expression:
+      <li className="lg:text-xl mt-6">
+        We can plug the x values into the equation and simplify to obtain the
+        y-coordinates.{" "}
+      </li>
+      <p className="lg:text-xl lg:w-3/4 pl-7">
+        Let&apos;s find the y-coordinate corresponding to the point with an
+        x-coordinate of -2.
+        <br /> For x = -2,
       </p>
-      <p className="lg:text-xl mt-20">Step 6: Factorize fully</p>
-      <p className="lg:text-xl mt-20 md:text-start text-center">
-        We can see that (2x-3) is a common factor hence we can rearrange the
-        expression as: <br /> (2x-3)(x-2)
+      <p className="lg:text-xl mt-14 md:text-start text-center">
+        This process can be repeated to fill the entire table of values.
       </p>
-      <div className="mt-20">
-        <h1 className="xl:text-3xl lg:text-2xl text-xl md:text-start text-center font-semibold">
-          Special Quadratic Expressions
-        </h1>
-        <li className="lg:text-xl mt-6">Difference of squares</li>
-        <p className="lg:text-xl lg:w-3/4 pl-7">
-          The difference of squares is a special form of quadratic expressions.
-          It takes the form:
-        </p>
-        <p className="lg:text-xl lg:w-3/4 pl-7 mt-10">
-          This can be factored into:
-        </p>
-        <p className="lg:text-xl lg:w-3/4 pl-7 mt-10">
-          Example: Factorize <br />
-          This can be recognized as the difference of squares : <br />
-          Therefore it can be factored as :
-        </p>
-        <li className="lg:text-xl mt-4">c = 0</li>
-        <p className="lg:text-xl lg:w-3/4 pl-7 mt-10">
-          When a quadratic expression has the form , where there is no term
-          independent of x, it can be factored as follows:
-        </p>
-        <p className="lg:text-xl lg:w-3/4 pl-7 mt-10">
-          Example: Factorize <br />
-          This can be factored in by identifying the common factors :{" "}
-        </p>
+      <div className="mt-10 w-full flex md:justify-start justify-center">
+        <img
+          src="/assets/images/table_of_values_filled.png"
+          className="rounded-lg lg:w-1/5 sm:w-2/3 w-1/2"
+          alt=""
+        />
       </div>
+      <li className="lg:text-xl mt-12">
+        Finally, we can mark the points we generated on a coordinate plane and
+        plot the straight line.
+      </li>
+      <div className="mt-10 w-full flex justify-center">
+        <img
+          src="/assets/images/drawing_graph.png"
+          className="rounded-lg lg:w-1/2"
+          alt=""
+        />
+      </div>
+      <p className="lg:text-xl mt-14 text-center">
+        It is a good practice to verify that the straight line we have plotted
+        is accurate by analyzing the properties like the slope and y-intercept
+        discussed earlier. The direction of the straight line accurately
+        reflects the negative slope of -2 in the equation hence the graph is
+        correct.
+      </p>
     </div>
   );
 };
