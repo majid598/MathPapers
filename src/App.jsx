@@ -14,6 +14,9 @@ import Blog7 from "./Pages/Blogs/Blog7";
 import Blog8 from "./Pages/Blogs/Blog8";
 import Blog9 from "./Pages/Blogs/Blog9";
 import Blog10 from "./Pages/Blogs/Blog10";
+import Blog11 from "./Pages/Blogs/Blog11";
+import Blog12 from "./Pages/Blogs/Blog12";
+import Blog13 from "./Pages/Blogs/Blog13";
 
 const App = () => {
   return (
@@ -50,6 +53,18 @@ const App = () => {
         <Route
           path="/blog/Modeling-real-world-problems-with-linear-inequalities"
           element={<Blog10 />}
+        />
+        <Route
+          path="/blog/Multiplying-and-Dividing-decimals"
+          element={<Blog11 />}
+        />
+        <Route
+          path="/blog/Multiplying-and-dividing-fractions"
+          element={<Blog12 />}
+        />
+        <Route
+          path="/blog/Pythagorean-Theorem-and-Its-Applications"
+          element={<Blog13 />}
         />
         <Route path="/topic/:id" element={<PracticePage />} />
       </Routes>
