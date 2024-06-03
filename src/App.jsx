@@ -22,6 +22,8 @@ import Blog15 from "./Pages/Blogs/Blog15";
 import Blog16 from "./Pages/Blogs/Blog16";
 import Blog17 from "./Pages/Blogs/Blog17";
 import Blog18 from "./Pages/Blogs/Blog18";
+import Blog19 from "./Pages/Blogs/Blog19";
+import Blog20 from "./Pages/Blogs/Blog20";
 
 const App = () => {
   return (
@@ -81,6 +83,14 @@ const App = () => {
         <Route
           path="/blog/Transformations-Rotation-and-Reflection"
           element={<Blog18 />}
+        />
+        <Route
+          path="/blog/Understanding-different-representations-of-numbers"
+          element={<Blog19 />}
+        />
+        <Route
+          path="/blog/Understanding-Inverse-Proportion"
+          element={<Blog20 />}
         />
         <Route path="/topic/:id" element={<PracticePage />} />
       </Routes>
