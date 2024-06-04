@@ -24,6 +24,7 @@ import Blog17 from "./Pages/Blogs/Blog17";
 import Blog18 from "./Pages/Blogs/Blog18";
 import Blog19 from "./Pages/Blogs/Blog19";
 import Blog20 from "./Pages/Blogs/Blog20";
+import PracticePapers from "./Pages/PracticePapers";
 
 const App = () => {
   return (
@@ -32,7 +33,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/activities" element={<Activities />} />
         <Route path="/game/:name" element={<Game />} />
-        <Route path="/practice/papers" element={<Practice />} />
+        <Route path="/practice/papers" element={<PracticePapers />} />
         <Route path="/blog/Area-of-circles-and-sectors" element={<Blog1 />} />
         <Route path="/blog/Comparing-fractions" element={<Blog2 />} />
         <Route

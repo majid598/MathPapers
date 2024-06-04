@@ -16,7 +16,7 @@ const Home = () => {
             <img
               src="/assets/images/hero.jpg"
               alt=""
-              className="w-full h-full"
+              className="w-full h-full xl:rounded-xl"
             />
             <div className="flex flex-col items-center justify-center w-full h-full px-8 absolute top-0 left-0">
               <h1 className="lg:text-5xl md:text-4xl text-3xl font-semibold">

@@ -19,23 +19,33 @@ const Blog1 = () => {
         circle easily.
       </p>
       <div className="mt-20 md:text-start text-center">
-        <h1 className="xl:text-3xl lg:text-2xl text-xl font-semibold">What is a circle?</h1>
+        <h1 className="xl:text-3xl lg:text-2xl text-xl font-semibold">
+          What is a circle?
+        </h1>
         <p className="lg:text-xl lg:w-3/4 mt-4">
           It is a round flat shape that has no corners or edges. A circle is
           practically a single curved line. All the points in this curved line
           are equidistant from a point called the Centre.{" "}
         </p>
-        <h1 className="xl:text-3xl lg:text-2xl text-xl font-semibold mt-10">What is a sector?</h1>
+        <h1 className="xl:text-3xl lg:text-2xl text-xl font-semibold mt-10">
+          What is a sector?
+        </h1>
         <p className="lg:text-xl lg:w-3/4 mt-4">
           A circle sector is like a slice of a circle. It's a part bounded by
           two radii (plural of radius) and an arc.
         </p>
       </div>
       <div className="mt-10 w-full justify-center">
-        <img src="/assets/images/sector.png" className="rounded-lg mx-auto" alt="" />
+        <img
+          src="/assets/images/sector.png"
+          className="rounded-lg mx-auto"
+          alt=""
+        />
       </div>
       <div className="mt-20 md:text-start text-center">
-        <h1 className="xl:text-3xl lg:text-2xl text-xl font-semibold">Area of a circle</h1>
+        <h1 className="xl:text-3xl lg:text-2xl text-xl font-semibold">
+          Area of a circle
+        </h1>
         <p className="lg:text-xl lg:w-3/4 mt-4">
           The area is the amount of space inside the circle. To find the area of
           a circle, we use a special formula.
@@ -45,9 +55,11 @@ const Blog1 = () => {
         <h4 className="md:text-2xl text-xl font-semibold">
           Let&apos;s see how we can derive this formula step by step:
         </h4>
-        <li className="underline py-20 xl:px-20 lg:px-16 md:px-8">
-          First, we can take a circle and divide it into 16 sectors
-        </li>
+        <div className="md:pl-12 pl-8">
+          <p className="lg:text-xl underline relative lg:before:top-3 before:content-[''] before:w-1.5 before:h-1.5 before:rounded-full before:bg-white before:absolute before:-left-4 before:top-2.5">
+            First, we can take a circle and divide it into 16 sectors
+          </p>
+        </div>
         <div className="flex justify-center">
           <img
             src="/assets/images/sector-formula.png"
@@ -55,14 +67,16 @@ const Blog1 = () => {
             alt=""
           />
         </div>
-        <li className="py-20 xl:px-20 lg:px-16 md:text-start text-center md:px-8">
-          <span className="underline">
-            Now let&apos;s arrange the sectors in an approximate rectangular
-            shape.
-          </span>{" "}
-          The length is approximately half the total circumference of the
-          circle.
-        </li>
+        <div className="md:pl-12 pl-8">
+          <p className="lg:text-xl relative lg:before:top-3 before:content-[''] before:w-1.5 before:h-1.5 before:rounded-full before:bg-white before:absolute before:-left-4 before:top-2.5">
+            <span className="underline">
+              Now let&apos;s arrange the sectors in an approximate rectangular
+              shape.
+            </span>{" "}
+            The length is approximately half the total circumference of the
+            circle.
+          </p>
+        </div>
         <div className="flex justify-center">
           <img
             src="/assets/images/rec.png"
@@ -70,18 +84,24 @@ const Blog1 = () => {
             alt=""
           />
         </div>
-        <li className="py-20 lg:px-20 px-8 list-outside lg:w-2/3 md:text-start text-center">
-          If we divide the circle into smaller sectors the shape will closely
-          resemble a rectangle where the
-          <span className="underline">length of the rectangle</span> is half of
-          the circumference and its width is equivalent to the radius. The
-          circumference
-          <span className="underline">
-            of a circle is , so half of that is .
-          </span>
-        </li>
+        <div className="md:pl-12 pl-8">
+          <p className="lg:text-xl relative lg:before:top-3 before:content-[''] before:w-1.5 before:h-1.5 before:rounded-full before:bg-white before:absolute before:-left-4 before:top-2.5">
+            If we divide the circle into smaller sectors the shape will closely
+            resemble a rectangle where the
+            <span className="underline">length of the rectangle</span> is half
+            of the circumference and its width is equivalent to the radius. The
+            circumference
+            <span className="underline">
+              of a circle is , so half of that is .
+            </span>
+          </p>
+        </div>
         <div className="flex justify-center">
-          <img src="/assets/images/3.png" className="rounded-lg lg:w-1/2" alt="" />
+          <img
+            src="/assets/images/3.png"
+            className="rounded-lg lg:w-1/2"
+            alt=""
+          />
         </div>
         <li className="py-20 xl:px-20 lg:px-16 md:px-8 list-outside lg:w-2/3">
           The area
@@ -104,7 +124,9 @@ const Blog1 = () => {
           that of the circle. Hence we can derive that:
         </p>
         <div className="mt-20">
-          <h1 className="xl:text-3xl lg:text-2xl text-xl font-semibold underline">Area of a sector</h1>
+          <h1 className="xl:text-3xl lg:text-2xl text-xl font-semibold underline">
+            Area of a sector
+          </h1>
           <p className="lg:text-xl lg:w-3/4 mt-4 underline">
             To find the area of a sector, we need to know what fraction of the
             whole circle the sector is. For example, if the sector is

@@ -1,6 +1,4 @@
-import React from 'react';
-import PracticePapersSidebar from '@src/components/features/PracticePapersSidebar';
-import Link from 'next/link';
+import {Link} from 'react-router-dom';
 
 const images = [
   'https://www.dadsworksheets.com/worksheets/addition/spaceship-math-a-v1-medium.jpg',
@@ -349,11 +347,11 @@ const groupHeaders = [
   'Spaceship Math Addition Z: All Problems (No Zero)',
 ];
 
-function practicepapers() {
+function PracticePapers() {
   return (
     <div className="mt-10 flex justify-center">
       <div className="ml-16 2xl:ml-0">
-        <PracticePapersSidebar category={'Addition'} />
+        {/* <PracticePapersSidebar category={'Addition'} /> */}
       </div>
       <div className="flex w-full max-w-7xl">
         <div className="flex flex-col">
@@ -380,7 +378,7 @@ function practicepapers() {
             {images.map((img, i) => (
               <>
                 {i % 4 === 0 && <h3 className="col-span-4 mt-6 mb-2">{groupHeaders[i / 4]}</h3>}
-                <Link href={redirectUrls[i]}>
+                <Link to={redirectUrls[i]}>
                   <img src={img} alt="" className="transition-all hover:scale-105" />
                 </Link>
               </>
@@ -392,4 +390,4 @@ function practicepapers() {
   );
 }
 
-export default practicepapers;
+export default PracticePapers;
