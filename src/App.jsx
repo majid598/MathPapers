@@ -1,18 +1,6 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Activities from "./Pages/Activities";
 import Blog1 from "./Pages/Blogs/Blog1";
-import Blog2 from "./Pages/Blogs/Blog2";
-import Game from "./Pages/Game";
-import Home from "./Pages/Home";
-import Practice from "./Pages/Practice";
-import PracticePage from "./Pages/PracticePage";
-import Blog3 from "./Pages/Blogs/Blog3";
-import Blog4 from "./Pages/Blogs/Blog4";
-import Blog5 from "./Pages/Blogs/Blog5";
-import Blog6 from "./Pages/Blogs/Blog6";
-import Blog7 from "./Pages/Blogs/Blog7";
-import Blog8 from "./Pages/Blogs/Blog8";
-import Blog9 from "./Pages/Blogs/Blog9";
 import Blog10 from "./Pages/Blogs/Blog10";
 import Blog11 from "./Pages/Blogs/Blog11";
 import Blog12 from "./Pages/Blogs/Blog12";
@@ -23,7 +11,18 @@ import Blog16 from "./Pages/Blogs/Blog16";
 import Blog17 from "./Pages/Blogs/Blog17";
 import Blog18 from "./Pages/Blogs/Blog18";
 import Blog19 from "./Pages/Blogs/Blog19";
+import Blog2 from "./Pages/Blogs/Blog2";
 import Blog20 from "./Pages/Blogs/Blog20";
+import Blog3 from "./Pages/Blogs/Blog3";
+import Blog4 from "./Pages/Blogs/Blog4";
+import Blog5 from "./Pages/Blogs/Blog5";
+import Blog6 from "./Pages/Blogs/Blog6";
+import Blog7 from "./Pages/Blogs/Blog7";
+import Blog8 from "./Pages/Blogs/Blog8";
+import Blog9 from "./Pages/Blogs/Blog9";
+import Game from "./Pages/Game";
+import Home from "./Pages/Home";
+import PracticePage from "./Pages/PracticePage";
 import PracticePapers from "./Pages/PracticePapers";
 
 const App = () => {
