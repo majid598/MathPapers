@@ -1,10 +1,10 @@
 import { FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import BlogCard from "../Components/BlogCard";
 import BlogSec from "../Components/BlogSec";
 import Footer from "../Components/Footer";
 import Header from "../Components/Header";
 import { blog1 } from "../Data/data";
-import BlogCard from "../Components/BlogCard";
 
 const Home = () => {
   return (

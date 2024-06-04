@@ -2,12 +2,12 @@ import { Link } from "react-router-dom";
 import Header from "../Components/Header";
 import PracticePapersSidebar from "../Components/PracticePapersSidebar";
 import {
-  subtractRedirectUrls,
-  subtractionGroupHeaders,
-  subtractionWorksheetsImages
+  divisionGroupHeaders,
+  divisionRedirectUrls,
+  divisionWorksheetsImages,
 } from "../Data/data";
 
-const SubtractionWorksheets = () => {
+const DivisionWorksheets = () => {
   return (
     <>
       <Header />
@@ -18,7 +18,7 @@ const SubtractionWorksheets = () => {
         <div className="flex w-full">
           <div className="flex flex-col">
             <h1 className="mt-1 mb-2 pl-1 text-left text-4xl font-semibold">
-              Subtraction Math Facts Worksheets
+              Division Math Facts Worksheets
             </h1>
             <p>
               These addition worksheets are similar to the
@@ -40,14 +40,14 @@ const SubtractionWorksheets = () => {
               if you or your kids are into silly sounds!
             </p>
             <div className="grid grid-cols-4">
-              {subtractionWorksheetsImages.map((img, i) => (
+              {divisionWorksheetsImages.map((img, i) => (
                 <>
                   {i % 4 === 0 && (
                     <h3 className="col-span-4 text-xl font-semibold mt-6 mb-2">
-                      {subtractionGroupHeaders[i / 4]}
+                      {divisionGroupHeaders[i / 4]}
                     </h3>
                   )}
-                  <Link to={subtractRedirectUrls[i]}>
+                  <Link to={divisionRedirectUrls[i]}>
                     <img
                       src={img}
                       alt=""
@@ -64,4 +64,4 @@ const SubtractionWorksheets = () => {
   );
 };
 
-export default SubtractionWorksheets;
+export default DivisionWorksheets;

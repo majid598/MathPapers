@@ -21,8 +21,10 @@ import Blog6 from "./Pages/Blogs/Blog6";
 import Blog7 from "./Pages/Blogs/Blog7";
 import Blog8 from "./Pages/Blogs/Blog8";
 import Blog9 from "./Pages/Blogs/Blog9";
+import DivisionWorksheets from "./Pages/DivisionWorksheets";
 import Game from "./Pages/Game";
 import Home from "./Pages/Home";
+import MultiplicationWorksheets from "./Pages/MultiplicationWorksheets";
 import PracticePapers from "./Pages/PracticePapers";
 import SubtractionWorksheets from "./Pages/SubtractionWorksheets";
 
@@ -93,12 +95,30 @@ const App = () => {
           path="/blog/Understanding-Inverse-Proportion"
           element={<Blog20 />}
         />
-        <Route path="/practice/addition-worksheets" element={<AdditionWorksheets />} />
-        <Route path="/practice/subtraction-worksheets" element={<SubtractionWorksheets />} />
-        <Route path="/practice/multiplication-worksheets" element={<PracticePapers />} />
-        <Route path="/practice/long-multiplication-worksheets" element={<PracticePapers />} />
-        <Route path="/practice/division-worksheets" element={<PracticePapers />} />
-        <Route path="/practice/mixed-operations-worksheets" element={<PracticePapers />} />
+        <Route
+          path="/practice/addition-worksheets"
+          element={<AdditionWorksheets />}
+        />
+        <Route
+          path="/practice/subtraction-worksheets"
+          element={<SubtractionWorksheets />}
+        />
+        <Route
+          path="/practice/multiplication-worksheets"
+          element={<MultiplicationWorksheets />}
+        />
+        <Route
+          path="/practice/long-multiplication-worksheets"
+          element={<PracticePapers />}
+        />
+        <Route
+          path="/practice/division-worksheets"
+          element={<DivisionWorksheets />}
+        />
+        <Route
+          path="/practice/mixed-operations-worksheets"
+          element={<PracticePapers />}
+        />
       </Routes>
     </Router>
   );
