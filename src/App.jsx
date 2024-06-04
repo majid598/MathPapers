@@ -1,5 +1,6 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Activities from "./Pages/Activities";
+import AdditionWorksheets from "./Pages/AdditionWorksheets";
 import Blog1 from "./Pages/Blogs/Blog1";
 import Blog10 from "./Pages/Blogs/Blog10";
 import Blog11 from "./Pages/Blogs/Blog11";
@@ -22,9 +23,7 @@ import Blog8 from "./Pages/Blogs/Blog8";
 import Blog9 from "./Pages/Blogs/Blog9";
 import Game from "./Pages/Game";
 import Home from "./Pages/Home";
-import PracticePage from "./Pages/PracticePage";
 import PracticePapers from "./Pages/PracticePapers";
-import AdditionWorksheets from "./Pages/AdditionWorksheets";
 import SubtractionWorksheets from "./Pages/SubtractionWorksheets";
 
 const App = () => {
