@@ -55,12 +55,12 @@ const Blog1 = () => {
         <h4 className="md:text-2xl text-xl font-semibold">
           Let&apos;s see how we can derive this formula step by step:
         </h4>
-        <div className="md:pl-12 pl-8">
+        <div className="md:pl-12 pl-8 mt-8">
           <p className="lg:text-xl underline relative lg:before:top-3 before:content-[''] before:w-1.5 before:h-1.5 before:rounded-full before:bg-white before:absolute before:-left-4 before:top-2.5">
             First, we can take a circle and divide it into 16 sectors
           </p>
         </div>
-        <div className="flex justify-center">
+        <div className="flex my-20 justify-center">
           <img
             src="/assets/images/sector-formula.png"
             className="rounded-lg lg:w-1/2"
@@ -77,7 +77,7 @@ const Blog1 = () => {
             circle.
           </p>
         </div>
-        <div className="flex justify-center">
+        <div className="flex my-20 justify-center">
           <img
             src="/assets/images/rec.png"
             className="rounded-lg lg:w-1/2"
@@ -96,23 +96,25 @@ const Blog1 = () => {
             </span>
           </p>
         </div>
-        <div className="flex justify-center">
+        <div className="flex my-20 justify-center">
           <img
             src="/assets/images/3.png"
             className="rounded-lg lg:w-1/2"
             alt=""
           />
         </div>
-        <li className="py-20 xl:px-20 lg:px-16 md:px-8 list-outside lg:w-2/3">
-          The area
-          <span className="underline">
-            of a rectangle can be calculated by .{" "}
-          </span>{" "}
-          Therefore
-          <span className="underline">the area of this rectangle we</span>
-          created <span className="underline">is</span>
-        </li>
-        <h2 className="md:text-2xl text-xl font-semibold text-center">
+        <div className="md:pl-12 pl-8">
+          <p className="lg:text-xl relative lg:before:top-3 before:content-[''] before:w-1.5 before:h-1.5 before:rounded-full before:bg-white before:absolute before:-left-4 before:top-2.5">
+            The area
+            <span className="underline">
+              of a rectangle can be calculated by .{" "}
+            </span>{" "}
+            Therefore
+            <span className="underline">the area of this rectangle we</span>
+            created <span className="underline">is</span>
+          </p>
+        </div>
+        <h2 className="md:text-2xl mt-8 text-xl font-semibold text-center">
           Area of Rectangle
         </h2>
         <h2 className="md:text-2xl text-xl font-semibold text-center">
