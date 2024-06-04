@@ -1,27 +1,24 @@
 import { Link } from "react-router-dom";
-import PracticePapersSidebar from "../Components/PracticePapersSidebar";
 import Header from "../Components/Header";
+import PracticePapersSidebar from "../Components/PracticePapersSidebar";
 import {
-  additionGroupHeaders,
-  additionRedirectUrls,
-  additionWorksheetsImages,
-  subtractRedirectUrls,
-  subtractionGroupHeaders,
-  subtractionWorksheetsImages,
+    subtractRedirectUrls,
+    subtractionGroupHeaders,
+    subtractionWorksheetsImages
 } from "../Data/data";
 
-const PracticePapers = () => {
+const SubtractionWorksheets = () => {
   return (
     <>
       <Header />
-      <div className="py-32 flex">
-        <div className="">
+      <div className="py-32 flex justify-center">
+        <div className="ml-16 2xl:ml-0">
           <PracticePapersSidebar />
         </div>
         <div className="flex w-full">
           <div className="flex flex-col">
             <h1 className="mt-1 mb-2 pl-1 text-left text-4xl font-semibold">
-              Math Worksheets
+              Subtraction Math Facts Worksheets
             </h1>
             <p>
               These addition worksheets are similar to the
@@ -42,23 +39,7 @@ const PracticePapers = () => {
               </a>{" "}
               if you or your kids are into silly sounds!
             </p>
-            <div className="w-full grid gap-x-10 gap-y-2 pr-10 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
-              {additionWorksheetsImages.map((img, i) => (
-                <>
-                  {i % 4 === 0 && (
-                    <h3 className="col-span-4 text-xl font-semibold mt-6 mb-2">
-                      {additionGroupHeaders[i / 4]}
-                    </h3>
-                  )}
-                  <Link to={additionRedirectUrls[i]} className="w-full">
-                    <img
-                      src={img}
-                      alt=""
-                      className="w-full transition-all hover:scale-105"
-                    />
-                  </Link>
-                </>
-              ))}
+            <div className="grid grid-cols-4">
               {subtractionWorksheetsImages.map((img, i) => (
                 <>
                   {i % 4 === 0 && (
@@ -83,4 +64,4 @@ const PracticePapers = () => {
   );
 };
 
-export default PracticePapers;
+export default SubtractionWorksheets;

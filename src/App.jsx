@@ -24,6 +24,8 @@ import Game from "./Pages/Game";
 import Home from "./Pages/Home";
 import PracticePage from "./Pages/PracticePage";
 import PracticePapers from "./Pages/PracticePapers";
+import AdditionWorksheets from "./Pages/AdditionWorksheets";
+import SubtractionWorksheets from "./Pages/SubtractionWorksheets";
 
 const App = () => {
   return (
@@ -92,7 +94,12 @@ const App = () => {
           path="/blog/Understanding-Inverse-Proportion"
           element={<Blog20 />}
         />
-        <Route path="/topic/:id" element={<PracticePage />} />
+        <Route path="/practice/addition-worksheets" element={<AdditionWorksheets />} />
+        <Route path="/practice/subtraction-worksheets" element={<SubtractionWorksheets />} />
+        <Route path="/practice/multiplication-worksheets" element={<PracticePapers />} />
+        <Route path="/practice/long-multiplication-worksheets" element={<PracticePapers />} />
+        <Route path="/practice/division-worksheets" element={<PracticePapers />} />
+        <Route path="/practice/mixed-operations-worksheets" element={<PracticePapers />} />
       </Routes>
     </Router>
   );

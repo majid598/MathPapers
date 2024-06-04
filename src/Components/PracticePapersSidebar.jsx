@@ -1,36 +1,58 @@
-import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 const PracticePapersSidebar = () => {
-  const topics = [
-    "Addition worksheets",
-    "Subtraction worksheets",
-    "Multiplication worksheets",
-    "Long multiplication worksheets",
-    "Division worksheets",
-    "Mixed operations worksheets",
+  const location = useLocation();
+  const links = [
+    {
+      name: "Addition worksheets",
+      address: "/practice/addition-worksheets",
+    },
+    {
+      name: "Subtraction worksheets",
+      address: "/practice/subtraction-worksheets",
+    },
+    {
+      name: "Multiplication worksheets",
+      address: "/practice/multiplication-worksheets",
+    },
+    {
+      name: "Long multiplication worksheets",
+      address: "/practice/long-multiplication-worksheets",
+    },
+    {
+      name: "Division worksheets",
+      address: "/practice/division-worksheets",
+    },
+    {
+      name: "Mixed operations worksheets",
+      address: "/practice/mixed-operations-worksheets",
+    },
   ];
-  const [selectedTopic, setSelectedTopic] = useState("All");
   return (
     <div className="bg-red-500 w-[22rem]">
-      <div className="h-[calc(100vh-6rem)] w-[20rem] top-24 left-0 fixed border-r-2 rounded-xl p-5">
-        <button
-          onClick={() => setSelectedTopic("All")}
+      <div className="h-[calc(100vh-6rem)] w-[20rem] top-24 left-0 fixed flex flex-col border-r-2 rounded-xl p-5">
+        <Link
+          to="/practice/papers"
           className={`w-full p-2 rounded-md text-start font-semibold ${
-            selectedTopic === "All" && "bg-white text-blue-900"
+            location.pathname === "/practice/papers"
+              ? "bg-white text-blue-900"
+              : "hover:bg-white/30"
           }`}
         >
           All
-        </button>
-        {topics.map((i) => (
-          <button
+        </Link>
+        {links.map((i) => (
+          <Link
             key={i}
-            onClick={() => setSelectedTopic(i)}
-            className={`w-full p-2 rounded-md text-start font-semibold ${
-              selectedTopic === i && "bg-white text-blue-900"
+            to={i.address}
+            className={`w-full p-2 mt-0.5 rounded-md text-start font-semibold ${
+              location.pathname === i.address
+                ? "bg-white text-blue-900"
+                : "hover:bg-white/30"
             }`}
           >
-            {i}{" "}
-          </button>
+            {i.name}
+          </Link>
         ))}
       </div>
     </div>
