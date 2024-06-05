@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-const Header = () => {
+const Header = ({ isScrollable = false }) => {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -23,9 +23,9 @@ const Header = () => {
   return (
     <header className="w-full">
       <nav
-        className={`w-full h-24 flex xl:px-20 lg:px-16 md:px-10 px-8 pl-0 items-center z-[999] transition-all duration-500 justify-between border-b-2 fixed top-0 right-0 ${
-          isScrolled && "bg-blur"
-        }`}
+        className={`w-full h-24 flex xl:px-20 lg:px-16 md:px-10 px-8 pl-0 items-center z-[999] transition-all duration-500 justify-between border-b-2 ${
+          isScrollable ? "relative" : "fixed"
+        } top-0 right-0 ${isScrolled && "bg-gray-900"}`}
       >
         <Link to="/" className="h-full">
           <img src="/assets/images/logo.png" className="h-full invert" alt="" />

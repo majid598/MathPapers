@@ -11,19 +11,21 @@ const Game = () => {
   }
 
   return (
-    <div className="w-full pt-32">
-      <Header />
-      <div className="w-full h-screen">
-        <iframe
-          id="game-iframe"
-          src={game.url}
-          className="w-full h-full"
-          allowFullScreen
-          frameborder="0"
-          title={game.name}
-        ></iframe>
+    <>
+      <Header isScrollable={true} />
+      <div className="w-full pt-32">
+        <div className="w-full h-screen">
+          <iframe
+            id="game-iframe"
+            src={game.url}
+            className="w-full h-full"
+            allowFullScreen
+            frameborder="0"
+            title={game.name}
+          ></iframe>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
