@@ -8,13 +8,13 @@ const AdditionWorksheets = () => {
     <>
       <Header />
       <div className="py-32 flex justify-center">
-        <div className="lg:block hidden">
+        <div>
           <PracticePapersSidebar />
         </div>
         <div className="flex w-full">
           <div className="flex flex-col">
-            <div className="lg:px-0 md:px-10 sm:px-8 px-4">
-              <h1 className="mt-1 mb-2 pl-1 text-left text-4xl font-semibold">
+            <div className="lg:px-0 md:px-10 lg:text-start text-center sm:px-8 px-4 lg:mt-0 mt-10">
+              <h1 className="mt-1 mb-2 pl-1 text-4xl font-semibold">
                 Addition Math Facts Worksheets
               </h1>
               <p>

@@ -43,6 +43,34 @@ export const games = [
   ...PacMaze,
 ];
 
+export const links = [
+  {
+    name: "Addition worksheets",
+    address: "/practice/addition-worksheets",
+    img: "https://www.dadsworksheets.com/worksheets/addition/spaceship-math-a-v1-medium.jpg",
+  },
+  {
+    name: "Subtraction worksheets",
+    address: "/practice/subtraction-worksheets",
+    img: "https://www.dadsworksheets.com/worksheets/subtraction/spaceship-math-a-v1-medium.jpg",
+  },
+  {
+    name: "Multiplication worksheets",
+    address: "/practice/multiplication-worksheets",
+    img: "https://www.dadsworksheets.com/worksheets/multiplication/spaceship-math-a-v1-medium.jpg",
+  },
+  {
+    name: "Graphic fractions",
+    address: "/practice/graphic-fractions-worksheets",
+    img: "https://www.dadsworksheets.com/worksheets/division/spaceship-math-a-v1-medium.jpg",
+  },
+  {
+    name: "Division worksheets",
+    address: "/practice/division-worksheets",
+    img: "https://www.dadsworksheets.com/worksheets/graphic-fractions/draw-fractions-v1-medium.jpg",
+  },
+];
+
 export const blog1 = {
   img: "area_sector_45.png",
   title: "Area of Circles and Sectors ",

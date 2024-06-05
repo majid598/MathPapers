@@ -1,12 +1,11 @@
 import { useState } from "react";
-import { BiMenu, BiSearch } from "react-icons/bi";
+import { BiSearch } from "react-icons/bi";
 import { Link } from "react-router-dom";
 import GameSidebar from "../Components/GameSidebar";
 import Header from "../Components/Header";
 import { games } from "../Data/data";
 
 const Activities = () => {
-  const [isOpen, setIsOpen] = useState(false);
   const [category, setCategory] = useState("All");
   const [searchTerm, setSearchTerm] = useState("");
   const handleSearch = (event) => {
@@ -32,18 +31,10 @@ const Activities = () => {
           <GameSidebar
             category={category}
             setCategory={setCategory}
-            isOpen={isOpen}
-            setIsOpen={setIsOpen}
           />
         </div>
         <div className="lg:w-[calc(100%-22rem)] w-full h-screen pt-32 lg:pr-10">
           <div className="w-full sm:px-0 flex lg:justify-start justify-end relative px-8">
-            <button
-              onClick={() => setIsOpen(true)}
-              className="text-3xl lg:hidden block absolute left-5 top-1/2 -translate-y-1/2"
-            >
-              <BiMenu />
-            </button>
             <div className="lg:w-full w-11/12 relative md:px-0 lg:pr-0 !pr-10">
               <BiSearch className="text-2xl absolute text-zinc-300 left-2 top-1/2 -translate-y-1/2" />
               <input

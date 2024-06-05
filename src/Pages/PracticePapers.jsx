@@ -5,7 +5,7 @@ import {
   additionWorksheets,
   divisionWorksheets,
   multiplicationWorksheets,
-  subtractionWorksheets,
+  subtractionWorksheets
 } from "../Data/data";
 
 const PracticePapers = () => {
@@ -13,12 +13,12 @@ const PracticePapers = () => {
     <>
       <Header />
       <div className="py-32 flex">
-        <div className="lg:block hidden">
+        <div>
           <PracticePapersSidebar />
         </div>
         <div className="flex w-full">
           <div className="flex flex-col">
-            <div className="lg:px-0 lg:text-start text-center md:px-10 sm:px-8 px-4">
+            <div className="lg:px-0 lg:text-start text-center md:px-10 sm:px-8 px-4 lg:mt-0 mt-10">
               <h1 className="mt-1 mb-2 pl-1 text-4xl font-semibold">
                 Math Worksheets
               </h1>
@@ -42,7 +42,7 @@ const PracticePapers = () => {
                 if you or your kids are into silly sounds!
               </p>
             </div>
-            <div className="w-full lg:block hidden py-10 lg:px-0 md:px-10 px-5">
+            <div className="w-full py-10 pt-0 lg:px-0 md:px-10 px-5">
               {additionWorksheets.map((sheet, i) => (
                 <div className="mt-10">
                   <h2 className="sm:text-xl font-semibold mb-2">
@@ -115,12 +115,6 @@ const PracticePapers = () => {
                   </div>
                 </div>
               ))}
-            </div>
-            <div className="w-full h-screen grid md:p-10 sm:p-8 p-5 pt-10 sm:grid-cols-3 sm:gap-8 gap-5 grid-cols-2 lg:hidden">
-              <div className="w-full h-80 bg-red-600"></div>
-              <div className="w-full h-80 bg-red-600"></div>
-              <div className="w-full h-80 bg-red-600"></div>
-              <div className="w-full h-80 bg-red-600"></div>
             </div>
           </div>
         </div>
