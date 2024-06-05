@@ -167,8 +167,6 @@ export const blogs = [
   },
 ];
 
-export const topics = [];
-
 export const additionWorksheets = [
   {
     title: "Spaceship Math Addition A: 1+2, 2+1, 1+3, 3+1",
@@ -2304,6 +2302,93 @@ export const divisionWorksheets = [
       {
         img: "https://www.dadsworksheets.com/worksheets/division/spaceship-math-x-v4-medium.jpg",
         url: "https://www.dadsworksheets.com/worksheets/division/spaceship-math-x-v4.html",
+      },
+    ],
+  },
+];
+
+export const graphicFractionsWorksheets = [
+  {
+    title: "Draw the Fraction: Simple Fractions",
+    sheets: [
+      {
+        img: "https://www.dadsworksheets.com/worksheets/graphic-fractions/draw-fractions-v1-medium.jpg",
+        url: "https://www.dadsworksheets.com/worksheets/graphic-fractions/draw-fractions-v1.html",
+      },
+      {
+        img: "https://www.dadsworksheets.com/worksheets/graphic-fractions/draw-fractions-v2-medium.jpg",
+        url: "https://www.dadsworksheets.com/worksheets/graphic-fractions/draw-fractions-v2.html",
+      },
+      {
+        img: "https://www.dadsworksheets.com/worksheets/graphic-fractions/draw-fractions-v3-medium.jpg",
+        url: "https://www.dadsworksheets.com/worksheets/graphic-fractions/draw-fractions-v3.html",
+      },
+      {
+        img: "https://www.dadsworksheets.com/worksheets/graphic-fractions/draw-fractions-v4-medium.jpg",
+        url: "https://www.dadsworksheets.com/worksheets/graphic-fractions/draw-fractions-v4.html",
+      },
+    ],
+  },
+  {
+    title: "Draw the Fraction: Simple Fractions 2",
+    sheets: [
+      {
+        img: "https://www.dadsworksheets.com/worksheets/graphic-fractions/draw-fractions-2-v1-medium.jpg",
+        url: "https://www.dadsworksheets.com/worksheets/graphic-fractions/draw-fractions-2-v1.html",
+      },
+      {
+        img: "https://www.dadsworksheets.com/worksheets/graphic-fractions/draw-fractions-2-v2-medium.jpg",
+        url: "https://www.dadsworksheets.com/worksheets/graphic-fractions/draw-fractions-2-v2.html",
+      },
+      {
+        img: "https://www.dadsworksheets.com/worksheets/graphic-fractions/draw-fractions-2-v3-medium.jpg",
+        url: "https://www.dadsworksheets.com/worksheets/graphic-fractions/draw-fractions-2-v3.html",
+      },
+      {
+        img: "https://www.dadsworksheets.com/worksheets/graphic-fractions/draw-fractions-2-v4-medium.jpg",
+        url: "https://www.dadsworksheets.com/worksheets/graphic-fractions/draw-fractions-2-v4.html",
+      },
+    ],
+  },
+  {
+    title: "Draw the Fraction: Mixed Fractions 1",
+    sheets: [
+      {
+        img: "https://www.dadsworksheets.com/worksheets/graphic-fractions/mixed-fractions-1-v1-medium.jpg",
+        url: "https://www.dadsworksheets.com/worksheets/graphic-fractions/mixed-fractions-1-v1.html",
+      },
+      {
+        img: "https://www.dadsworksheets.com/worksheets/graphic-fractions/mixed-fractions-1-v2-medium.jpg",
+        url: "https://www.dadsworksheets.com/worksheets/graphic-fractions/mixed-fractions-1-v2.html",
+      },
+      {
+        img: "https://www.dadsworksheets.com/worksheets/graphic-fractions/mixed-fractions-1-v3-medium.jpg",
+        url: "https://www.dadsworksheets.com/worksheets/graphic-fractions/mixed-fractions-1-v3.html",
+      },
+      {
+        img: "https://www.dadsworksheets.com/worksheets/graphic-fractions/mixed-fractions-1-v4-medium.jpg",
+        url: "https://www.dadsworksheets.com/worksheets/graphic-fractions/mixed-fractions-1-v4.html",
+      },
+    ],
+  },
+  {
+    title: "Draw the Fraction: Mixed Fractions 2",
+    sheets: [
+      {
+        img: "https://www.dadsworksheets.com/worksheets/graphic-fractions/mixed-fractions-2-v1-medium.jpg",
+        url: "https://www.dadsworksheets.com/worksheets/graphic-fractions/mixed-fractions-2-v1.html",
+      },
+      {
+        img: "https://www.dadsworksheets.com/worksheets/graphic-fractions/mixed-fractions-2-v2-medium.jpg",
+        url: "https://www.dadsworksheets.com/worksheets/graphic-fractions/mixed-fractions-2-v2.html",
+      },
+      {
+        img: "https://www.dadsworksheets.com/worksheets/graphic-fractions/mixed-fractions-2-v3-medium.jpg",
+        url: "https://www.dadsworksheets.com/worksheets/graphic-fractions/mixed-fractions-2-v3.html",
+      },
+      {
+        img: "https://www.dadsworksheets.com/worksheets/graphic-fractions/mixed-fractions-2-v4-medium.jpg",
+        url: "https://www.dadsworksheets.com/worksheets/graphic-fractions/mixed-fractions-2-v4.html",
       },
     ],
   },

@@ -27,6 +27,7 @@ import Home from "./Pages/Home";
 import MultiplicationWorksheets from "./Pages/MultiplicationWorksheets";
 import PracticePapers from "./Pages/PracticePapers";
 import SubtractionWorksheets from "./Pages/SubtractionWorksheets";
+import GraphicFractions from "./Pages/GraphicFractions";
 
 const App = () => {
   return (
@@ -108,16 +109,12 @@ const App = () => {
           element={<MultiplicationWorksheets />}
         />
         <Route
-          path="/practice/long-multiplication-worksheets"
-          element={<PracticePapers />}
-        />
-        <Route
           path="/practice/division-worksheets"
           element={<DivisionWorksheets />}
         />
         <Route
-          path="/practice/mixed-operations-worksheets"
-          element={<PracticePapers />}
+          path="/practice/graphic-fractions-worksheets"
+          element={<GraphicFractions />}
         />
       </Routes>
     </Router>

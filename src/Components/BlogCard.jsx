@@ -5,7 +5,7 @@ const BlogCard = ({ blog, className }) => {
   return (
     <div
       key={blog.title}
-      className={`card w-full shadow p-5 rounded-xl ${className}`}
+      className={`card w-full shadow p-5 rounded-xl bg-gray-900 ${className}`}
     >
       <div className="w-full h-52 rounded-lg overflow-hidden">
         <img src={`/assets/images/${blog.img}`} className="w-full h-full" alt="" />

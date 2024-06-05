@@ -16,16 +16,12 @@ const PracticePapersSidebar = () => {
       address: "/practice/multiplication-worksheets",
     },
     {
-      name: "Long multiplication worksheets",
-      address: "/practice/long-multiplication-worksheets",
+      name: "Graphic fractions",
+      address: "/practice/graphic-fractions-worksheets",
     },
     {
       name: "Division worksheets",
       address: "/practice/division-worksheets",
-    },
-    {
-      name: "Mixed operations worksheets",
-      address: "/practice/mixed-operations-worksheets",
     },
   ];
   return (
