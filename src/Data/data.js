@@ -2392,4 +2392,25 @@ export const graphicFractionsWorksheets = [
       },
     ],
   },
+  {
+    title: "Draw the Fraction: Mixed Fractions 2",
+    sheets: [
+      {
+        img: "https://www.dadsworksheets.com/worksheets/graphic-fractions/mixed-fractions-3-v1-medium.jpg",
+        url: "https://www.dadsworksheets.com/worksheets/graphic-fractions/mixed-fractions-3-v1.html",
+      },
+      {
+        img: "https://www.dadsworksheets.com/worksheets/graphic-fractions/mixed-fractions-3-v2-medium.jpg",
+        url: "https://www.dadsworksheets.com/worksheets/graphic-fractions/mixed-fractions-3-v2.html",
+      },
+      {
+        img: "https://www.dadsworksheets.com/worksheets/graphic-fractions/mixed-fractions-3-v3-medium.jpg",
+        url: "https://www.dadsworksheets.com/worksheets/graphic-fractions/mixed-fractions-3-v3.html",
+      },
+      {
+        img: "https://www.dadsworksheets.com/worksheets/graphic-fractions/mixed-fractions-3-v4-medium.jpg",
+        url: "https://www.dadsworksheets.com/worksheets/graphic-fractions/mixed-fractions-3-v4.html",
+      },
+    ],
+  },
 ];
