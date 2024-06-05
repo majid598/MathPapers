@@ -10,7 +10,7 @@ const GameSidebar = ({ category, setCategory }) => {
         isOpen ? "left-0" : "-left-[16rem]"
       } transition-all duration-500 lg:p-10`}
     >
-      <div className="w-full h-full relative lg:border-2 lg:border-r-0 border-r-2 lg:rounded-tr-none lg:rounded-br-none rounded-tr-xl rounded-br-xl lg:bg-transparent bg-gray-900 lg:rounded-xl p-5">
+      <div className="w-full h-full relative lg:border-2 border-r-2 lg:rounded-tr-none lg:rounded-br-none rounded-tr-xl rounded-br-xl lg:bg-transparent bg-gray-900 lg:rounded-xl p-5">
         <button
           onClick={() => setIsOpen((prev) => !prev)}
           className="lg:hidden absolute -right-[3.45rem] border-t border-r border-b bg-gray-900 rounded-tr-full rounded-br-full h-12 py-1 flex flex-col justify-center px-3 pr-4 z-[999] top-4"
