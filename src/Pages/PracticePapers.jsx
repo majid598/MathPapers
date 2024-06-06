@@ -23,14 +23,14 @@ const PracticePapers = () => {
                 Math Worksheets
               </h1>
               <p>
-                These addition worksheets are similar to the
+                These Math worksheets are similar to the
                 <a
                   className="mx-1 text-blue400"
                   href="https://www.dadsworksheets.comhttps://www.dadsworksheets.com/2008/09/05/an-overview-of-rocket-math.html"
                 >
                   <i className="font-semibold text-blue-500">RocketMath</i>
                 </a>
-                , <i>Wolf Swamp</i> or <i>Mastering Math Facts</i> addition
+                , <i>Wolf Swamp</i> or <i>Mastering Math Facts</i> Math
                 worksheets used at many schools. These are typically one minute,
                 timed tests. Try my super entertaining
                 <a
