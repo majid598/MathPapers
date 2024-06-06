@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { BiSearch } from "react-icons/bi";
 import { Link } from "react-router-dom";
 import GameSidebar from "../Components/GameSidebar";
@@ -6,23 +6,23 @@ import Header from "../Components/Header";
 import { games } from "../Data/data";
 
 const Activities = () => {
-  const [category, setCategory] = useState("All");
+  const [category, setCategory] = useState("");
+  const [filteredGames, setFilteredGames] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
   const handleSearch = (event) => {
     setSearchTerm(event.target.value.toLowerCase());
   };
 
-  console.log(games);
+  useEffect(() => {
+    // Filter the games based on category and search term
+    const filtered = games.filter(game => {
+      const matchesCategory = category === '' || game.category === category;
+      const matchesSearchTerm = searchTerm === '' || game.name.toLowerCase().includes(searchTerm.toLowerCase());
+      return matchesCategory && matchesSearchTerm;
+    });
+    setFilteredGames(filtered);
+  }, [category, searchTerm]);
 
-  const filteredGames = games.filter((game) => {
-    if (category === "All")
-      return games && game.name.toLowerCase().includes(searchTerm);
-    if (category) {
-      return game.category === category;
-    } else {
-      return game.name.toLowerCase().includes(searchTerm);
-    }
-  });
   return (
     <div className="w-full">
       <Header />

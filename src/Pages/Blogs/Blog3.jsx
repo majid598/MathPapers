@@ -88,12 +88,21 @@ const Blog3 = () => {
           To convert a mixed number to an improper fraction, we can follow the
           steps below:
         </p>
-        <li>Multiply the denominator by the number of wholes</li>
-        <li>Add the result from step 1 to the numerator</li>
-        <li>
-          The result of step 2 will be the numerator of the improper fraction
-        </li>
-        <li>The denominator will remain unchanged.</li>
+        <div className="md:pl-12 pl-8 mt-8">
+          <p className="lg:text-xl underline relative lg:before:top-3 before:content-[''] before:w-1.5 before:h-1.5 before:rounded-full before:bg-white before:absolute before:-left-4 before:top-2.5">
+            Multiply the denominator by the number of wholes
+          </p>
+          <p className="lg:text-xl underline relative lg:before:top-3 before:content-[''] before:w-1.5 before:h-1.5 before:rounded-full before:bg-white before:absolute before:-left-4 before:top-2.5">
+            Add the result from step 1 to the numerator
+          </p>
+          <p className="lg:text-xl underline relative lg:before:top-3 before:content-[''] before:w-1.5 before:h-1.5 before:rounded-full before:bg-white before:absolute before:-left-4 before:top-2.5">
+            The result of step 2 will be the numerator of the improper fraction
+          </p>
+          <p className="lg:text-xl underline relative lg:before:top-3 before:content-[''] before:w-1.5 before:h-1.5 before:rounded-full before:bg-white before:absolute before:-left-4 before:top-2.5">
+            The denominator will remain unchanged.
+          </p>
+
+        </div>
         <p className="lg:text-xl mt-4 md:text-start text-center">
           The process of converting into an improper fraction is shown below.
         </p>

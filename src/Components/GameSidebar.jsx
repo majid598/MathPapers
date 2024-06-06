@@ -10,7 +10,7 @@ const GameSidebar = ({ category, setCategory }) => {
         isOpen ? "left-0" : "-left-[16rem]"
       } transition-all duration-500 lg:p-10`}
     >
-      <div className="w-full h-full relative lg:border-2 border-r-2 lg:rounded-tr-none lg:rounded-br-none rounded-tr-xl rounded-br-xl lg:bg-transparent bg-gray-900 lg:rounded-xl p-5">
+      <div className="w-full h-full relative lg:border-2 border-r-2 overflow-hidden lg:rounded-tr-none lg:rounded-br-none rounded-tr-xl rounded-br-xl lg:bg-transparent bg-gray-900 lg:rounded-xl p-5">
         <button
           onClick={() => setIsOpen((prev) => !prev)}
           className="lg:hidden absolute -right-[3.45rem] border-t border-r border-b bg-gray-900 rounded-tr-full rounded-br-full h-12 py-1 flex flex-col justify-center px-3 pr-4 z-[999] top-4"
@@ -34,9 +34,9 @@ const GameSidebar = ({ category, setCategory }) => {
         <h2 className="text-2xl font-semibold">Game Categories</h2>
         <div className="flex flex-col mt-5 overflow-y-scroll pr-4 pb-20 h-full">
           <button
-            onClick={() => setCategory("All")}
+            onClick={() => setCategory("")}
             className={`w-full py-1 px-2 rounded-md text-start font-semibold ${
-              category === "All" && "bg-white text-black"
+              category === "" && "bg-white text-black"
             }`}
           >
             All
